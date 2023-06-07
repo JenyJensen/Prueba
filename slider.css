@@ -1,0 +1,29 @@
+.slider {
+  display: none;
+  justify-content: center;
+  background-color: #f0f0f0;
+  height: 510px;
+  position: relative;
+}
+.flechasig{
+  position: absolute;
+  right: 0;
+  margin: 200px 500px 0px 0px;
+}
+.flechaant{
+  position: absolute;
+  left: 0;
+  margin: 200px 0px 0px 500px;
+}
+.galeria
+{
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  height: 510px;
+  position: relative;
+}
+button {
+  height: 50px;
+  margin: 0px 0px 0px 50%;
+}
