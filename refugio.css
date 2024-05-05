@@ -59,6 +59,9 @@ nav ul li a:hover {
     margin-left: 5px;
     margin-right: 60px;
 }
+aside {
+    float: right;
+}
 @media (max-widht: 767px) {
     .logo {
         background-color: rgb(209, 115, 7);
