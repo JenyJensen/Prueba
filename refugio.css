@@ -1,12 +1,12 @@
-.logo {
-    background-color: rgb(209, 115, 7);
+/* .logo {
+    background-color: rgb(50, 28, 4);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
-}
+} */
 
 body {
-    background-color: rgb(168, 242, 166);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(33, 131, 6);
+    font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
     line-height: 250%;
     font-size: medium;
 }
@@ -15,30 +15,42 @@ p {
     color: brown;
 }
 
-.imagen-logo {
-    display: inline-block;
+nav div.imagen-logo {
+    margin: 5px;
 }
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 100%;
-    color: rgb(241, 245, 244);
-}
-
-.nav-bar {
-    display: inline-block;
-    margin-right: 20px;
-}
-
 nav ul li {
+    flex-wrap: nowrap;
     display: inline-block;
+    align-items: center;
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
 }
+nav div.links {
+
+flex-wrap: nowrap;
+    list-style: none;
+    font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    /* line-height: 100%; */
+    color: rgb(241, 245, 244);
+}
+
+.nav-bar {
+    background-color: rgb(167, 90, 3);
+    display: flex; 
+ 
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* nav ul li {
+    display: inline-block;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+} */
 
 nav ul li a {
     text-decoration: none;
@@ -55,10 +67,10 @@ nav ul li a:hover {
     color: #1BF7DE;
 }
 
-.hist-ternu {
+/* .hist-ternu {
     margin-left: 5px;
     margin-right: 60px;
-}
+} */
 aside {
     float: right;
 }
