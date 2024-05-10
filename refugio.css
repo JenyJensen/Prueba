@@ -5,14 +5,13 @@
 } */
 
 body {
-    background-color: rgb(33, 131, 6);
+    background-color: rgb(24, 100, 3);
     font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 250%;
     font-size: medium;
 }
 
 p {
-    color: brown;
+    color: rgba(9, 24, 16, 0.387);
 }
 
 nav div.imagen-logo {
@@ -55,7 +54,7 @@ flex-wrap: nowrap;
 nav ul li a {
     text-decoration: none;
     color: aliceblue;
-    font-size: 25px;
+    font-size: large;
 }
 
 nav ul li a:visited {
