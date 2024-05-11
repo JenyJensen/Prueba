@@ -30,8 +30,8 @@ nav ul li {
     display: inline-block;
     align-items: center;
     border: var(--color-4);
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 2.5px;
+    padding: 5px;
 }
 nav div.links {
 
