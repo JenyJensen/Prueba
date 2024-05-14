@@ -23,7 +23,7 @@
         </p>
         <p>Whatsapp +549225745689</p>
         <p>Correo: elmestizo@gmail.com.ar</p>
-        <h3>Formulario de contacto.</h3>
+        <h3>O llena este formulario y te enviaremos un email con la respuesta.</h3>
         <form>
             <p><label for="Nombre y apellido:">Nombre y apellido:</label>
                 <input type="text" size="30" name="nombre" id="nombre">
@@ -50,6 +50,18 @@
                 <label for="Visitarnos">Visitarnos</label>
                 <input type="checkbox" name="opcion" value="visitarnos">
             </p>
+
+            <label for="mostrarSelect">Selecciona turno:</label>
+        <input type="" id="mostrarSelect" name="mostrarSelect" onchange="toggleSelect()">
+        
+        <div id="selectContainer" style="display: none;">
+            <label for="opciones">Opciones:</label>
+            <select id="opciones" name="opciones">
+                <option value="opcion1">Mañana</option>
+                <option value="opcion2">Tarde</option>
+                <option value="opcion3">Noche</option>
+            </select>
+        </div>
 
             <div class="textarea"><label for="Comentario.">Comentario:</label>
         
