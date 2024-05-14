@@ -1,13 +1,11 @@
-
-
 :root {
-    --color-1: #ed6a5a; 
+    --color-1: #ed6a5a;
     --color-2: #f4f1bb;
-    --color-3: #9bc1bc; 
-    --color-4: #e6ebe0; 
-    --color-5: #36c9c6; 
-  }
-  
+    --color-3: #9bc1bc;
+    --color-4: #e6ebe0;
+    --color-5: #36c9c6;
+}
+
 body {
     background-color: var(--color-4);
     font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
@@ -18,3 +16,19 @@ p {
     color: var(--color-1);
 }
 
+#contactanos {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ed6a5a;
+}
+
+section#formulario-contacto {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+section#formulario-contacto div.textarea{
+    display:inline-flex;
+     flex-direction: column;
+    color: #ed6a5a;
+    /*esto es para que el textarea quede abajo del label comentario*/
+}
