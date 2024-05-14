@@ -1,20 +1,39 @@
-
-
 :root {
     --color-1: #ed6a5a; 
     --color-2: #f4f1bb;
     --color-3: #9bc1bc; 
     --color-4: #e6ebe0; 
     --color-5: #36c9c6; 
-  }
-  
+}
+
 body {
     background-color: var(--color-4);
     font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* El header, contenido y footer toman cada uno su respectivo tamaño */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en el contenido */
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+section {
+    background-color: var(--color-2); /* Color de fondo de las secciones */
+    padding: 20px; /* Espacio interno de las secciones */
+    border-radius: 5px; /* Borde redondeado para las secciones */
 }
 
 p {
     color: var(--color-1);
 }
 
+#footer-placeholder {
+    grid-row: 3; /* Asegura que el footer esté en la fila 3 */
+    width: 100%; /* El footer ocupa todo el ancho */
+}
