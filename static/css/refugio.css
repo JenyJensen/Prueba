@@ -20,13 +20,13 @@ main {
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna en el contenido */
     gap: 20px; /* Espacio entre las secciones */
-    padding: 20px; /* Añade espacio alrededor del contenido */
+    padding: 0px; /* Añade espacio alrededor del contenido */
 }
 
 section {
     background-color: var(--color-2); /* Color de fondo de las secciones */
     padding: 20px; /* Espacio interno de las secciones */
-    border-radius: 5px; /* Borde redondeado para las secciones */
+    border-radius: 0px; /* Borde redondeado para las secciones */
 }
 
 p {
@@ -37,3 +37,55 @@ p {
     grid-row: 3; /* Asegura que el footer esté en la fila 3 */
     width: 100%; /* El footer ocupa todo el ancho */
 }
+
+
+.hero-section {
+    background-image: url('../css/img/_dabece8b-1bb6-4412-a0d5-ce99dab84ae1.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Ajusta el espacio interior según sea necesario */
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    display: inline-block;
+    border-radius: 10px; /* Radio de borde para el fondo */
+    -webkit-background-clip: padding-box; /* Aplicar el radio de borde al fondo */
+    background-clip: padding-box; 
+}
+
+.hero-section p {
+    
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #cecece;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    display: inline-block;
+    border-radius: 10px; /* Radio de borde para el fondo */
+    -webkit-background-clip: padding-box; /* Aplicar el radio de borde al fondo */
+    background-clip: padding-box; 
+}
+
+.texto-contraste {
+    color: #ffffff; /* Color blanco para el texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+
