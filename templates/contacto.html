@@ -17,7 +17,7 @@
     <section id="formulario-contacto">
         <h1 id="contactanos">Contactanos.</h1>
         <img src="../static/css/img/refugio.jpg" alt="Refugio" width="500vw">
-        <p style="color:blue">
+        <p>
             Para hacer donaciones o ser madrina/padrino,
             comunicate al tel (+549)223-456789.
         </p>
@@ -26,14 +26,20 @@
         <h3>O llena este formulario y te enviaremos un email con la respuesta.</h3>
         <form>
             <p><label for="Nombre y apellido:">Nombre y apellido:</label>
+                <div id="nombre-error" class="error-message"></div>
                 <input type="text" size="30" name="nombre" id="nombre">
+                
             </p>
             <p><label for="Email:">Email:</label>
-                <input type="email" size="30" name="email" id="email">
+                <div id="email-error" class="error-message"></div>
+                <input type="text" size="30" name="email" id="email">
+                
             </p>
             <p>
                 <label for="Telefono:">Teléfono:</label>
-                <input type="tel" size="30">
+                <div id="telefono-error" class="error-message"></div>
+                <input type="tel" size="30" id="telefono">
+                
             </p>
             <p>
                 <label for="intencion">¿Qué querés hacer?</label>
@@ -48,15 +54,16 @@
             </p>
             <p>
                 <label for="Visitarnos">Visitarnos</label>
-                <input type="checkbox" name="opcion" value="visitarnos">
+                <input type="checkbox" name="opcion" value="visitarnos"
+                id="mostrarSelect" 
+                onchange="toggleSelect()">
             </p>
 
-            <label for="mostrarSelect">Selecciona turno:</label>
-        <input type="" id="mostrarSelect" name="mostrarSelect" onchange="toggleSelect()">
+             
         
-        <div id="selectContainer" style="display: none;">
-            <label for="opciones">Opciones:</label>
-            <select id="opciones" name="opciones">
+        <div id="selectContainer" style="display: none; margin-bottom: 12px;">
+            <label for="opciones">Selecciona turno para visitarnos:</label>
+            <select id="opciones" name="opciones" class="turnos">
                 <option value="opcion1">Mañana</option>
                 <option value="opcion2">Tarde</option>
                 <option value="opcion3">Noche</option>
@@ -74,5 +81,6 @@
     <div id="footer-placeholder"></div>
 </body>
 <script src="../static/css/js/nyfloader.js"></script>
+<script src="../static/css/js/formulario.js"></script>
 
 </html>
