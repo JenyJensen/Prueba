@@ -21,7 +21,6 @@ nav div.links {
 flex-wrap: nowrap;
     list-style: none;
     font-family: helvetica, Verdana, Geneva, Tahoma, sans-serif;
-    /* line-height: 100%; */
     color: var(--color-4);
 }
 
@@ -33,14 +32,6 @@ flex-wrap: nowrap;
     align-items: center;
 
 }
-
-/* nav ul li {
-    display: inline-block;
-    align-items: center;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-} */
 
 nav ul li a {
     text-decoration: none;
@@ -54,13 +45,10 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    color: #1BF7DE;
+    color: var(--color-5);
 }
 
-/* .hist-ternu {
-    margin-left: 5px;
-    margin-right: 60px;
-} */
+
 aside {
     float: right;
 }
