@@ -52,7 +52,12 @@ label {
 
 }
 
+.titulo-formulario{
+    color: var(--color-1);
+}
+
 #contactanos {
+    width: 100%;
     color: var(--color-1);
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -219,7 +224,7 @@ section#formulario-contacto div.textarea {
 }
 
 .announcement-box a,
-.contact-box a {
+.contact-box a, .contact-box button {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -232,7 +237,7 @@ section#formulario-contacto div.textarea {
 }
 
 .announcement-box a:hover,
-.contact-box a:hover {
+.contact-box a:hover, .contact-box button:hover{
     background-color: var(--color-5);
 }
 
