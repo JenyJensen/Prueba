@@ -1,31 +1,56 @@
-let imagenes = ["imagen/Empoderada.jpeg",
-    "imagen/snoopy corazon.jpg",
-    "imagen/Ternu con gorra.jpeg"
-];
-document.Imagen.src = imagenes [0];
-let flechaAnterior = document.querySelector(".flechaant");
-let flechaSiguiente = document.querySelector(".flechasig");
-let contador = 0;
-
-function moverDerecha(){
-    contador++;
-    if(contador > imagenes.length - 1)
-    {
-        contador = 0
+document.addEventListener("DOMContentLoaded", function() {
+    let imagenes = [
+        "../static/css/img/Empoderada.jpeg",
+        "../static/css/img/snoopy corazon.jpg",
+        "../static/css/img/Ternu con gorra.jpeg"
+    ];
+    
+    let imagenElement = document.querySelector("[name='Imagen']");
+    imagenElement.src = imagenes[0];
+    
+    let flechaAnterior = document.querySelector(".flechaant");
+    let flechaSiguiente = document.querySelector(".flechasig");
+    let contador = 0;
+    
+    function moverDerecha() {
+        contador++;
+        if (contador > imagenes.length - 1) {
+            contador = 0;
+        }
+        actualizarImagen('right');
     }
-    document.Imagen.src = imagenes [contador]
-}
-flechaSiguiente.addEventListener("click", moverDerecha)
-
-function moverIzquierda(){
-    contador--;
-    if(contador < 0)
-    {
-        contador = imagenes.length - 1;
+    
+    function moverIzquierda() {
+        contador--;
+        if (contador < 0) {
+            contador = imagenes.length - 1;
+        }
+        actualizarImagen('left');
     }
-    document.Imagen.src = imagenes [contador]
-}
-flechaAnterior.addEventListener("click", moverIzquierda)
-
-let botonInterruptor = document.querySelector("#estado");
-function interruptor
+    
+    function actualizarImagen(direccion) {
+        imagenElement.classList.remove('slide-left', 'slide-right');
+        
+        void imagenElement.offsetWidth; // Reflow trick to restart the animation
+        
+        if (direccion === 'right') {
+            imagenElement.classList.add('slide-right');
+        } else {
+            imagenElement.classList.add('slide-left');
+        }
+        imagenElement.src = imagenes[contador];
+    }
+    
+    flechaSiguiente.addEventListener("click", moverDerecha);
+    flechaAnterior.addEventListener("click", moverIzquierda);
+    
+    let botonInterruptor = document.querySelector("#estado");
+    botonInterruptor.addEventListener("click", function() {
+        let slider = document.querySelector(".slider");
+        if (slider.style.display === "none" || slider.style.display === "") {
+            slider.style.display = "flex";
+        } else {
+            slider.style.display = "none";
+        }
+    });
+});
