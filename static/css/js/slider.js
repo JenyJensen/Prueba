@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let imagenes = [
         "../static/css/img/Empoderada.jpeg",
-        "../static/css/img/snoopy corazon.jpg",
+        "../static/css/img/refugio.jpg",
         "../static/css/img/Ternu con gorra.jpeg"
     ];
     

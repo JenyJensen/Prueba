@@ -170,7 +170,19 @@ section#formulario-contacto div.textarea {
     /* Ajusta el espacio interior según sea necesario */
 }
 
-.hero-section h1, .hero-section2 h1 {
+.perromatch {
+    background-image: url('../css/img/_9e12a5c0-a38c-42d4-9e5b-7ff135c3d8dc.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px;
+    /* Ajusta el espacio interior según sea necesario */
+}
+
+.hero-section h1, .hero-section2 h1, .perromatch h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;

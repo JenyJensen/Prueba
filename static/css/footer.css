@@ -43,3 +43,14 @@
 .footer ul li a:hover {
     text-decoration: underline;
 }
+@media (max-width: 767px) {
+    .col-md-6 ul li a, div.col-md-6 p {
+        font-size: 13px;
+    }
+    .col-md-6 ul{
+        width: 130px;
+    }
+div.row :first-child{
+    margin-left: 5px;
+}
+}
