@@ -70,3 +70,20 @@ button {
 .rotar-180 {
   transform: rotate(180deg);
 }
+@media (max-width: 375px){
+  .slider {
+    display: none;
+  }
+  .flechasig {
+    display: none;
+  }
+  .flechaant {
+    display: none;
+  }
+  .galeria {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+}
