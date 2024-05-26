@@ -96,7 +96,7 @@ label {
     padding-bottom: 10px;
 }
 
-section#formulario-contacto {
+section#formulario-contacto, section#formulario-perromatch {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,7 +248,8 @@ section#formulario-contacto div.textarea {
 
 .about-box,
 .announcement-box,
-.contact-box {
+.contact-box,
+.perromatch-box {
     /* cajas */
     background-color: #d3d0a1;
     padding: 20px;
@@ -261,7 +262,8 @@ section#formulario-contacto div.textarea {
 .about-box:hover,
 .announcement-box:hover,
 .contact-box:hover,
-.lista-perros-box:hover {
+.lista-perros-box:hover,
+.perromatch-box {
     /* animación */
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -270,7 +272,8 @@ section#formulario-contacto div.textarea {
 .about-box p,
 .announcement-box p,
 .contact-box p,
-.lista-perros-box p {
+.lista-perros-box p,
+.perromatch-box {
     /* parrafo */
     color: var(--color-1);
     font-size: 1em;
@@ -295,7 +298,8 @@ section#formulario-contacto div.textarea {
 }
 
 .announcement-box a,
-.contact-box a, .contact-box button {
+.contact-box a, .contact-box button,
+.perromatch-box button {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -308,7 +312,8 @@ section#formulario-contacto div.textarea {
 }
 
 .announcement-box a:hover,
-.contact-box a:hover, .contact-box button:hover{
+.contact-box a:hover, .contact-box button:hover,
+.perromatch-box button:hover{
     background-color: var(--color-5);
 }
 
@@ -322,7 +327,8 @@ section#formulario-contacto div.textarea {
 }
 
 .announcement-box,
-.contact-box {
+.contact-box,
+.perromatch-box {
     grid-column: span 2;
     /* Ensure it spans across both columns */
     max-width: 500px;
@@ -336,3 +342,45 @@ section#formulario-contacto div.textarea {
     margin-bottom: 10px;
 }
 
+/* Estilos del modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.perromatch-box {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
