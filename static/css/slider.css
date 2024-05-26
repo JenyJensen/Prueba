@@ -15,7 +15,7 @@
 .flechaant {
   position: absolute;
   left: 10px;
-  top: 38%;
+  top: 50%;
   transform: translateY(-50%);
 }
 .galeria {
@@ -67,8 +67,46 @@ button {
 .negativo {
   filter: invert(1);
 }
-.rotar-180 {
-  transform: rotate(180deg);
+
+@media (max-width: 768px){
+  div#slider-placeholder{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .slider {
+    position: relative; /* Necesario para que los elementos hijos con posición absoluta se posicionen respecto a este contenedor */
+    width: 300px; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+}
+
+.imagen, .flecha.flechaant.rotar-180.negativo {
+    position: absolute; /* Posición absoluta para superponer imágenes */
+    width: 100%; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: 100%; /* Ajusta la altura de las imágenes según sea necesario */
+    
+}
+
+.imagen {
+    z-index: 1; /* Imagen de fondo */
+}
+.flecha.flechaant.rotar-180.negativo, .flecha.flechasig.negativo {
+    z-index: 2;
+
+  }
+  .flecha.flechasig.negativo{
+  position: absolute;
+  right: -170px;
+  top: 45%;
+  transform: translateY(-50%);
+  }
+  .flecha.flechaant.rotar-180.negativo{ 
+  position: absolute;
+  left: -170px;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
 }
 @media (max-width: 375px){
   .slider {

@@ -66,3 +66,22 @@ aside {
 padding-left: 0%;
     }
 }
+@media (max-width: 600px){
+    div.links ul{
+        display: flex;
+    flex-direction: column;
+}
+div.imagen-logo img {
+    width: 170px;
+    height: 100px;
+}
+}
+@media (max-width: 375px){
+    div.imagen-logo img {
+        width: 100px;
+        height: 70px;
+    }
+    body{
+        width: 100%;
+    }
+}

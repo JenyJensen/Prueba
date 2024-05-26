@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 )
 function initializeSlider() {
     let imagenes = [
-        "../static/css/img/Empoderada.jpeg",
-        "../static/css/img/snoopy corazon.jpg",
-        "../static/css/img/Ternu con gorra.jpeg"
+        "../static/css/img/chico con perro.jpg",
+        "../static/css/img/luna_1.jpg",
+        "../static/css/img/bella_2.jpg"
     ];
 
     let imagenElement = document.querySelector("[name='Imagen']");
