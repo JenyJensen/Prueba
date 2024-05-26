@@ -263,7 +263,7 @@ section#formulario-contacto div.textarea {
 .announcement-box:hover,
 .contact-box:hover,
 .lista-perros-box:hover,
-.perromatch-box {
+.perromatch-box:hover {
     /* animación */
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -273,7 +273,7 @@ section#formulario-contacto div.textarea {
 .announcement-box p,
 .contact-box p,
 .lista-perros-box p,
-.perromatch-box {
+.perromatch-box p {
     /* parrafo */
     color: var(--color-1);
     font-size: 1em;
@@ -299,7 +299,8 @@ section#formulario-contacto div.textarea {
 
 .announcement-box a,
 .contact-box a, .contact-box button,
-.perromatch-box button {
+.perromatch-box button
+ {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -309,11 +310,13 @@ section#formulario-contacto div.textarea {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    border: none;
 }
 
 .announcement-box a:hover,
 .contact-box a:hover, .contact-box button:hover,
-.perromatch-box button:hover{
+.perromatch-box button:hover,
+.modal-content-perromatch-box button:hover{
     background-color: var(--color-5);
 }
 
@@ -342,7 +345,7 @@ section#formulario-contacto div.textarea {
     margin-bottom: 10px;
 }
 
-/* Estilos del modal */
+/* Estilos del modal de perromatch*/
 .modal {
     display: none; 
     position: fixed;
@@ -378,9 +381,28 @@ section#formulario-contacto div.textarea {
     cursor: pointer;
 }
 
-.perromatch-box {
-    background-color: #fff; 
+.modal-content-perromatch-box {
+    background-color: var(--color-2); 
     padding: 20px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.modal-content-perromatch-box button {
+    display: inline;
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-1);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+}
+.button-modal{
+    text-align: center;
+}
+a{
+    text-decoration: none;
 }

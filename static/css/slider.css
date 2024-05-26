@@ -1,10 +1,24 @@
+:root {
+  --color-1: #ed6a5a;
+  --color-2: #f4f1bb;
+  --color-3: #9bc1bc;
+  --color-4: #e6ebe0;
+  --color-5: #36c9c6;
+}
+
 .slider {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  height: 510px;
+  background-color: var(--color-2);
   position: relative;
+}
+img.slide-right {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 227px; /* Ajusta según sea necesario */
+  object-fit: cover; /* Para recortar la imagen sin distorsión */
 }
 .flechasig {
   position: absolute;
@@ -18,17 +32,17 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.galeria {
+/* .galeria {
   display: flex;
   justify-content: center;
   background-color: #f0f0f0;
   height: 510px;
   margin-top: 20px;
-}
-button {
+} */
+/* button {
   height: 50px;
   margin: 10px 0px 10px 50%;
-}
+} */
 
 @keyframes slideInLeft {
   from {
@@ -99,12 +113,14 @@ button {
   right: -170px;
   top: 45%;
   transform: translateY(-50%);
+  width: 50%;
   }
   .flecha.flechaant.rotar-180.negativo{ 
   position: absolute;
-  left: -170px;
+  left: -40%;
   top: 70%;
   transform: translateY(-50%);
+  
 }
 
 }
